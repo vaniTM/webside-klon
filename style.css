@@ -4,7 +4,6 @@
   padding: 0;
   box-sizing: 5px;
   border: yellow;
-  border-radius: 5px;
   justify-content: space-evenly;
   font-family: spotify-circular, Helvetica, Arial, sans-serif;
 }
@@ -12,7 +11,7 @@
 .vorlage {
   position: absolute;
   z-index: -1;
-  opacity: 0.6;
+  opacity: 0;
 }
 
 @font-face {
@@ -22,36 +21,33 @@
 
 body {
   display: grid;
-  grid-template-columns: 174.6px 1170px 174.6px;
-  grid-template-rows: 80px 846px 530.4px;
+  grid-template-columns: 175px 1170px 175px;
+  grid-template-rows: 80px 846px 530px;
   font-family: spotify-circular, Helvetica, Arial, sans-serif;
 }
 
 .logo {
   height: 40px;
-  color: white;
-  display: flex;
-  flex-direction: row;
-  grid-area: 1 / 2 / 2 / 3;
 }
 
 nav {
-  grid-area: 1 / 1 / 2 / 4;
-  /* background-color: black; */
+  grid-area: 1 / 2 / 2 / 3;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-nav ul {
-  grid-area: 1 / 2/ 2 / 3;
+nav > ul {
   list-style: none;
   display: flex;
-  object-position: left;
-  justify-content: space-evenly;
   color: white;
-  align-items: right;
-  flex-direction: row;
-  padding: 32px 17px;
   font-weight: 700;
-  margin-left: 550px;
+  justify-content: space-between;
+}
+
+nav > ul > li {
+  margin-left: 40px;
 }
 
 a:hover {
