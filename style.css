@@ -3,15 +3,15 @@
   margin: 0;
   padding: 0;
   box-sizing: 5px;
-  border: yellow;
   justify-content: space-evenly;
   font-family: spotify-circular, Helvetica, Arial, sans-serif;
+  background-color: black;
 }
 
 .vorlage {
   position: absolute;
   z-index: -1;
-  opacity: 0;
+  opacity: 0.4;
 }
 
 @font-face {
@@ -21,24 +21,24 @@
 
 body {
   display: grid;
-  grid-template-columns: 175px 1170px 175px;
-  grid-template-rows: 80px 846px 530px;
-  font-family: spotify-circular, Helvetica, Arial, sans-serif;
+  grid-template-columns: 175px 195px 195px 195px 195px 390px 175px;
+  grid-template-rows: 80px 846px 78px 346px 15px 39px 52px;
 }
 
+/* MENULEISTE */
 .logo {
   height: 40px;
+  padding-left: 15px;
 }
 
-nav {
-  grid-area: 1 / 2 / 2 / 3;
-  background-color: black;
+.menu {
+  grid-area: 1 / 2 / 2 / 7;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-nav > ul {
+#menu {
   list-style: none;
   display: flex;
   color: white;
@@ -46,10 +46,11 @@ nav > ul {
   justify-content: space-between;
 }
 
-nav > ul > li {
-  margin-left: 40px;
+#listitem-menu {
+  margin-left: 30px;
 }
 
+/* LINK EFEKTE WUUUUUUUUUUUSCHHHH */
 a:hover {
   color: #1ed760;
   text-decoration: none;
@@ -57,11 +58,10 @@ a:hover {
 a {
   color: white;
   text-decoration: none;
-  font-weight: bold;
-  font-size: 16px;
   cursor: pointer;
 }
 
+/* MITTELTEIL */
 h1 {
   grid-area: 2 / 2 / 2 / 3;
   color: #1ed760;
@@ -77,6 +77,8 @@ h1 {
   display: block;
   text-indent: -3.3em;
   position: auto;
+
+  background-color: rgb(41, 65, 171);
 }
 
 h4 {
@@ -86,30 +88,26 @@ h4 {
   width: 800px;
   font-size: 18px;
   line-height: 24px;
-  padding-bottom: 40px;
-  padding-top: -50px;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 10px;
   font-weight: 400;
+
+  background-color: rgb(41, 65, 171);
 }
 
 .row2 {
-  grid-area: 2 / 1 / 3 / 4;
-  /* background-color: rgb(41, 65, 171); */
+  grid-area: 2 / 1 / 3 / 8;
+  background-color: rgb(41, 65, 171);
   background-image: url(bursts.svg);
   background-size: 175%;
   background-position: 46% 4%;
-  min-height: 846px;
   background-repeat: no-repeat;
-  height: 100vh;
   text-align: center;
   display: flex;
-  -webkit-box-align: center;
   align-items: center;
   flex-direction: column;
-  -webkit-box-pack: center;
   justify-content: center;
   overflow: hidden;
+  padding-bottom: 55px;
 }
 
 #freeSpotify {
@@ -117,6 +115,231 @@ h4 {
   --background-highlight: #2de26d;
   color: #2941ab;
   border-radius: 500px;
-  padding: 14px 32px;
+  border: transparent;
+  padding: 14px 18px;
   font-size: inherit;
+  margin-top: 68px;
+}
+
+#freeSpotify:hover {
+  background-color: #21e065;
+  transform: scale(1.04);
+  cursor: pointer;
+}
+
+/* ZUSATZINFORMATIONEN UND SO WAS */
+
+.logo-bottom {
+  grid-area: 4 / 2 / 5 / 3;
+  height: 42px;
+  padding-left: 16px;
+  padding-top: 3px;
+}
+
+.column3 {
+  grid-area: 4 / 3 / 5 / 4;
+  padding-left: 15px;
+  margin: 25px 0;
+  color: #919496;
+}
+
+#listitem-column3 {
+  font-size: 14px;
+  list-style: none;
+  line-height: 1.5;
+  padding: 23px 0 15px;
+  margin-bottom: -16px;
+}
+
+.column4 {
+  grid-area: 4 / 4 / 5 / 5;
+  padding-left: 15px;
+  margin: 25px 0;
+  color: #919496;
+}
+
+#listitem-column4 {
+  font-size: 14px;
+  list-style: none;
+  line-height: 1.5;
+  padding: 23px 0 15px;
+  margin-bottom: -16px;
+}
+
+.column5 {
+  grid-area: 4 / 5 / 5 / 6;
+  padding-left: 15px;
+  margin: 25px 0;
+  color: #919496;
+}
+
+#listitem-column5 {
+  font-size: 14px;
+  list-style: none;
+  line-height: 1.5;
+  padding: 23px 0 15px;
+  margin-bottom: -16px;
+}
+
+/* FUSSZEILE ODER WAS DAS IST */
+.index {
+  grid-area: 6 / 2 / 7 / 5;
+  display: flex;
+  padding: 1em 0;
+  font-size: 12px;
+  justify-content: space-between;
+}
+
+#index {
+  display: flex;
+  justify-content: space-between;
+}
+
+#listitem-index {
+  font-size: 11px;
+  list-style: none;
+  margin-left: 16px;
+  line-height: 1.5;
+}
+
+#earth {
+  width: 16px;
+  grid-area: 5 / 6 / 6 / 7;
+  display: flex;
+}
+
+.standort {
+  grid-area: 5 / 6 / 6 / 7;
+  display: flex;
+  font-size: 12px;
+  justify-content: end;
+  padding-right: 10px;
+  padding-top: 2px;
+  color: #919496;
+}
+
+#listitem-standort {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  justify-content: end;
+  color: #919496;
+}
+.otherLinks:hover {
+  color: #1ed760;
+}
+
+.otherLinks {
+  color: #919496;
+}
+
+#copyright {
+  grid-area: 6 / 6 / 7 / 7;
+  display: flex;
+  font-size: 12px;
+  justify-content: end;
+  color: #919496;
+  padding-top: 15px;
+  padding-right: 15px;
+}
+
+#copyright:hover {
+  color: #1ed760;
+}
+
+/* SOCIAL MEDIA UND SO */
+#instagram {
+  width: 24px;
+}
+
+/* #instagram-background {
+  grid-area: 4 / 6 / 5 / 7;
+  display: flex;
+  width: 54px;
+  height: 54px;
+
+  position: absolute;
+
+  background-color: #222326;
+  border-radius: 50%;
+  opacity: 0.4;
+
+  margin-top: 21px;
+  margin-left: 184px;
+} */
+
+.instagram {
+  grid-area: 4 / 6 / 5 / 7;
+  display: flex;
+  padding-top: 37px;
+  padding-left: 33px;
+  position: relative;
+}
+
+.stillinstagram {
+  grid-area: 4 / 6 / 5 / 7;
+}
+
+#twitter {
+  width: 24px;
+}
+
+/* #twitter-background {
+  grid-area: 4 / 6 / 5 / 7;
+  display: flex;
+  width: 54px;
+  height: 54px;
+
+  position: absolute;
+
+  background-color: #222326;
+  border-radius: 50%;
+  opacity: 0.4;
+
+  margin-top: 21px;
+  margin-left: 253px;
+} */
+
+.twitter {
+  grid-area: 4 / 6 / 5 / 7;
+  display: flex;
+  padding-top: 37px;
+  padding-left: 175px;
+  position: relative;
+}
+
+.stilltwitter {
+  grid-area: 4 / 6 / 5 / 7;
+}
+
+#facebook {
+  width: 24px;
+}
+
+/* #facebook-background {
+  grid-area: 4 / 6 / 5 / 7;
+  display: flex;
+  width: 54px;
+  height: 54px;
+
+  position: absolute;
+
+  background-color: #222326;
+  border-radius: 50%;
+  opacity: 0.4;
+
+  margin-top: 21px;
+  margin-left: 322px;
+} */
+
+.facebook {
+  grid-area: 4 / 6 / 5 / 7;
+  display: flex;
+  padding-top: 37px;
+  padding-left: 305px;
+  position: relative;
+}
+
+.stillfacebook {
+  grid-area: 4 / 6 / 5 / 7;
 }
