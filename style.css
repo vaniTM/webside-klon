@@ -252,94 +252,69 @@ h4 {
   width: 24px;
 }
 
-/* #instagram-background {
-  grid-area: 4 / 6 / 5 / 7;
-  display: flex;
-  width: 54px;
-  height: 54px;
-
-  position: absolute;
-
-  background-color: #222326;
-  border-radius: 50%;
-  opacity: 0.4;
-
-  margin-top: 21px;
-  margin-left: 184px;
-} */
-
-.instagram {
-  grid-area: 4 / 6 / 5 / 7;
-  display: flex;
-  padding-top: 37px;
-  padding-left: 33px;
-  position: relative;
-}
-
-.stillinstagram {
-  grid-area: 4 / 6 / 5 / 7;
-}
-
 #twitter {
   width: 24px;
-}
-
-/* #twitter-background {
-  grid-area: 4 / 6 / 5 / 7;
-  display: flex;
-  width: 54px;
-  height: 54px;
-
-  position: absolute;
-
-  background-color: #222326;
-  border-radius: 50%;
-  opacity: 0.4;
-
-  margin-top: 21px;
-  margin-left: 253px;
-} */
-
-.twitter {
-  grid-area: 4 / 6 / 5 / 7;
-  display: flex;
-  padding-top: 37px;
-  padding-left: 175px;
-  position: relative;
-}
-
-.stilltwitter {
-  grid-area: 4 / 6 / 5 / 7;
 }
 
 #facebook {
   width: 24px;
 }
 
-/* #facebook-background {
+.socialmedia {
   grid-area: 4 / 6 / 5 / 7;
   display: flex;
+  justify-content: space-between;
+  color: transparent;
+}
+
+#socialmedia {
+  display: flex;
+  margin-left: 158px;
+  padding-top: 37px;
+}
+
+#mediasocial {
+  padding-left: 42px;
+}
+
+#sodiamecial {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 170px;
+}
+
+#instagram-background {
   width: 54px;
   height: 54px;
-
-  position: absolute;
 
   background-color: #222326;
   border-radius: 50%;
   opacity: 0.4;
 
-  margin-top: 21px;
-  margin-left: 322px;
-} */
-
-.facebook {
-  grid-area: 4 / 6 / 5 / 7;
-  display: flex;
-  padding-top: 37px;
-  padding-left: 305px;
-  position: relative;
+  margin: 21px;
+  margin-left: -173px;
 }
 
-.stillfacebook {
-  grid-area: 4 / 6 / 5 / 7;
+#twitter-background {
+  width: 54px;
+  height: 54px;
+
+  background-color: #222326;
+  border-radius: 50%;
+  opacity: 0.4;
+
+  margin: 21px;
+  margin-left: -103px;
+}
+
+#facebook-background {
+  width: 54px;
+  height: 54px;
+
+  background-color: #222326;
+  border-radius: 50%;
+  opacity: 0.4;
+
+  margin: 21px;
+  margin-left: -33px;
 }
