@@ -5,7 +5,7 @@
   box-sizing: 5px;
   justify-content: space-evenly;
   font-family: spotify-circular, Helvetica, Arial, sans-serif;
-  background-color: black;
+  /* background-color: black; */
 }
 
 .vorlage {
@@ -304,7 +304,7 @@ h4 {
   opacity: 0.4;
 
   margin: 21px;
-  margin-left: -103px;
+  margin-left: -113px;
 }
 
 #facebook-background {
@@ -316,5 +316,5 @@ h4 {
   opacity: 0.4;
 
   margin: 21px;
-  margin-left: -33px;
+  margin-left: -48px;
 }
